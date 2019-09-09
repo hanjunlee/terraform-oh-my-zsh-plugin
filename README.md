@@ -22,11 +22,11 @@ plugins=(... terraform)
 
  * Type `terraform` into your prompt and hit `TAB` to see available completion options
 
-### Expanding ZSH prompt with current Terraform workspace name
+### Features
 
-If you want to get current Terraform workspace name in your ZSH prompt open
-your .zsh-theme file and in a chosen place insert:
-
+- When you type at the `-target` option it show the list of resources.
 ```shell
-PROMPT=$'%{$fg[white]%}$(tf_prompt_info)%{$reset_color%} '
+$ terraform plan -target 
+
+foo.bar bar.baz ...
 ```
